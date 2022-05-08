@@ -1,0 +1,22 @@
+* `for`
+Este es un comando que nos permite reutilizar una porcion de codigo en forma de bucle, es decir llega al final y vuelve a empezar, hasta tanto la condicion dada sea falsa.
+el mismo recibe, 3 expresiones, en la primera se define el valor inicial, en segundo lugar se realiza la comparación, que mientras sea verdadera ejecutara el codigo debajo, y por ultimo recibe una tercera expresion la cual es de que manera se va incrementando su valor.
+for (inicialización; condición; actualización) { 
+   	//sentencias a ejecutar en cada iteración 
+}
+
+Ejemplo:
+for (i=1; i<5; i++){
+    console.log(i);
+}
+En el ejemplo anterior vamos a imprimir en la consola 1,2,3,4. (es decir va ejecutar el codigo 4 veces, ya que cuando i valga 5, ya la condicion no se cumple y el proceso continua.)
+
+
+* `&&`, `||`, `!`
+&& es un operador lógico "Y" (AND en ingles) nos permite hacer dos comparaciones, las cuales ambas deben ser verdaderas para obtener true, en caso contrario obtendremos falso (false)
+esAdolecente = edad > 12 && edad < 21;
+en el ejemplo anterior la variable "esAdolecente" solo contendra el valor verdadero (true) si y solo si la primer y segunda condicion son verdaderas.
+
+|| es un operador lógico "O" (OR en inglés) nos permite hacer dos comparaciones, las cuales cualquiera que sea verdadera, obtenemos el valor booleano verdadero (true).
+esByN = color == "negro || color == "blanco";
+en el ejemplo anterior, se realiza una comparación, si la variable color es blanco o negro, cualquiera de las dos, vamos a obtener un resultado verdadero.

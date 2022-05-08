@@ -1,0 +1,51 @@
+ * Variables
+ Es un contenedor con un nombre cualquiera, donde se guardar un valor que puede ir cambiando en el tiempo. Por ejemplo: 
+ edad = 18; 
+ En el ejemplo anterior estamos creando una variable llamada edad que tiene un valor numerico de 18.
+
+ * Strings:
+ Es un tipo de Dato que contiene texto, no permite hacer operaciones matematicas. 
+ Para que Javascript lo entienda como tal, el texto debe ir encerrado entre comillas (")
+ nombre = "Damian"; 
+ En el ejemplo anterior estamos creando una variables que contiene un tipo de Dato String (de texto)
+
+
+ * Funciones (argumentos, `return`)
+ Las funciones son bloques de código que se pueden reutilizar llamandolas con el nombre de la misma mas dos parentesis.
+ en el ejemplo siguiente se crea una funcion llamada saludar, la cual escribe en la Consola de salida el Texto "Hola, como estas?"
+ function saludar(){
+     console.log("Hola, como estas?")
+ }
+ saludar();
+
+ * argumentos
+ Son datos que le pasamos a la funcion, la cual permite interactuar con el bloque de código, pudiendo generar distintos resultados, según el valor enviado. 
+ Ejemplo:
+  function sumar(a, b){
+     console.log(a + b)
+ }
+ sumar(10,5); -> imprime 15
+ sumar(20,30); -> imprime 50
+ En el ejemplo anterior, estamos declarando una funcion llamada sumar, la cual recibe dos valores como parametros, los cuales son utilizados para realizar una operacion de suma.
+
+
+*return
+es un comando que permite que las funciones devuelvan un resultado, segun los parametros enviados.
+una vez utilizado este comando, la funcion termina su proceso, sin importar si hay mas código debajo.
+function sumar(a, b){
+     return(a + b)
+}
+resultado = sumar (10, 20)
+En el ejemplo anterior, en lugar de imprimir en consola el resultado, la funcion devuelve el valor de la suma. Cuyo valor se lo asigna a una variable.
+
+
+ * Declaraciones `if`
+ Es una declaracion condicional, Solo se va ejecutar la porción de código dentro de las llaves, solo si la condicion se cumple como verdadera.
+ Por ejemplo. 
+ if (edad > 18) {
+     // aqui solo se ejecuta el codigo si la variable edad es mayor a 18.
+ }
+
+ * Valores booleanos (`true`, `false`)
+ Son valores con solo 2 estados, o es verdadero o es falso. 
+ generalmente son utilizados para realizar condicionales donde puede ir tomando dos o mas caminos segun su valor.

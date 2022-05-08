@@ -1,0 +1,9 @@
+Array:
+es un conjunto de datos agrupados dentro de un contenedor, como si fueran estantes, donde en cada estante puedo poner una cosa distinta de otra. 
+Cada elemento, se va acomodando de forma numerica, el primer elemento tiene como posición el valor 0 (cero), el segundo tiene valor 1 (uno) y asi sucesivamente.
+la misma se define con los corchetes [] donde adentro le agregamos el contenido separado por comas.
+
+miBiblioteca = ["libros", "cds", "lapices", 10];
+en el ejemplo anterior creamos una matriz (Array) donde le asignamos 4 valores distintos a cada posición.
+en la posición 0, tenemos "libros, mientras que en la posición 3 tenemos el número 10. 
+Notese que los elementos, no necesariamente tienen que ser del mismo valor, cada posición puede tener cualquier tipo de dato.
