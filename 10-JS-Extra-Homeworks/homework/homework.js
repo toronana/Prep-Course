@@ -37,6 +37,12 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var may = min = "";
+  var m = s.split("");
+  m.forEach(letra => {
+    (letra === letra.toLowerCase()) ? min += letra : may += letra;
+  });
+  return (may+min);
 }
 
 
@@ -46,6 +52,12 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  var mEspejo = [];
+  var m = str.split(" ");
+  m.forEach(palabra => {
+    mEspejo.push(palabra.split("").reverse().join(""));
+  });
+  return (mEspejo.join(" "));  
 } 
 
 
@@ -54,6 +66,18 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  var m = numero.toString().split("");
+  var i = 0;
+  var j = m.length-1;
+  var respuesta = "Es capicua";
+  while (i!=j){
+    if(m[i] != m[j]) {
+      respuesta = "No es capicua";
+      break;
+    }
+    i++; j--;
+  }
+  return respuesta;
 }
 
 
@@ -61,6 +85,8 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  var c = cadena.replaceAll("a","").replaceAll("b","").replaceAll("c","");
+  return c;
 }
 
 
@@ -68,7 +94,18 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  arr.sort(function (a, b) {
+    if (a.length > b.length) {
+      return 1;
+    }
+    if (a.length < b.length) {
+      return -1;
+    }
+    return 0;
+  });
+  return arr;
 }
+
 
 
 function buscoInterseccion(arreglo1, arreglo2){
@@ -77,6 +114,13 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  var m = [];
+  arreglo1.forEach(a1 => {
+    arreglo2.forEach(a2 => {
+      if(a1 == a2) m.push(a1);
+    });
+  });
+  return m;
 }
 
 
