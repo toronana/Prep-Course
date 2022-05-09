@@ -10,6 +10,11 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var m = []
+  for (clave in objeto) {
+    m.push([clave, objeto.clave]);
+  }
+  return m;
 }
 
 
@@ -18,6 +23,12 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  var m = string.split("");
+  var o = {};
+  m.forEach(valor => {
+    m[valor] += 1;
+  });
+  return o;
 }
 
 
