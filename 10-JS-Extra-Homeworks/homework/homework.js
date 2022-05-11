@@ -12,7 +12,7 @@ function deObjetoAmatriz(objeto){
   //Escribe tu código aquí
   var m = []
   for (clave in objeto) {
-    m.push([clave, objeto.clave]);
+    m.push([clave, objeto[clave]]);
   }
   return m;
 }
@@ -26,7 +26,8 @@ function numberOfCharacters(string) {
   var m = string.split("");
   var o = {};
   m.forEach(valor => {
-    o[valor] += 1;
+   if(!o[valor]) o[valor] = 0;
+   o[valor] += 1;
   });
   return o;
 }
@@ -66,19 +67,10 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
-  var m = numero.toString().split("");
-  var i = 0;
-  var j = m.length-1;
-  var respuesta = "Es capicua";
-  while (i!=j){
-    if(m[i] != m[j]) {
-      respuesta = "No es capicua";
-      break;
-    }
-    i++; j--;
-  }
-  return respuesta;
+  var nEspejo = numero.toString().split("").reverse().join("");  
+  return ( (nEspejo == numero) ? "Es capicua" : "No es capicua");
 }
+
 
 
 function deleteAbc(cadena){
