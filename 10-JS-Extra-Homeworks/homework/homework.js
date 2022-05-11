@@ -26,7 +26,7 @@ function numberOfCharacters(string) {
   var m = string.split("");
   var o = {};
   m.forEach(valor => {
-    m[valor] += 1;
+    o[valor] += 1;
   });
   return o;
 }
